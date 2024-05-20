@@ -1,0 +1,12 @@
+--- Jogo ---
+cod
+20
+rpg
+--- Jogo ---
+freefire
+10
+Guerra
+--- Jogo ---
+fifa
+50
+futbol
