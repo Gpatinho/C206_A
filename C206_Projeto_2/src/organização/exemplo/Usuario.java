@@ -32,6 +32,28 @@ public class Usuario {
             }
         }
     }
+    public void Usuario(Facebook redeSociais){
+        for( int i = 0; i < redeSocial.length; i++){
+            if(redeSocial[i] == null){
+                redeSocial[i] = redeSociais;
+                if(redeSocial[i] instanceof Facebook){
+                    System.out.println("O usuário tem uma conta no Facebook!");
+                    break;
+                }else if (redeSocial[i] instanceof GooglePlus){
+                    System.out.println("O usuário tem uma conta no GooglePlus!");
+                    break;
+                }else if (redeSocial[i] instanceof Instagram){
+                    System.out.println("O usuário tem uma conta no Instagram!");
+                    break;
+                }else if (redeSocial[i] instanceof Twitter){
+                    System.out.println("O usuário tem uma conta no Twitter!");
+                    break;
+                }
+
+                break;
+            }
+        }
+    }
 
     public String getNome() {
         return nome;
@@ -49,8 +71,8 @@ public class Usuario {
         this.email = email;
     }
 
-    public void Usuario(Facebook face1) {
-    }
+    // public void Usuario(Facebook face1) {
+    //  }
 
     public void Usuario(Instagram insta1) {
     }
